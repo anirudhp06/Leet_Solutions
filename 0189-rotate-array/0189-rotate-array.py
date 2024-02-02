@@ -4,7 +4,7 @@ class Solution:
         Do not return anything, modify nums in-place instead.
         """
         k=k%len(n)
-        if k>0 or k<=len(n):
+        if k>0:
             n.reverse()
             n[:k]=n[:k][::-1]
             n[k:]=n[k:][::-1]
